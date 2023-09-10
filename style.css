@@ -1,0 +1,313 @@
+/* Universal style */
+*{
+margin:0;
+padding: 0;
+}
+
+/* First section */
+.firstSection{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 2000px;
+    width: auto;
+}
+
+.overlayTextDiv{
+background-color: black;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height: 2000px;
+width: 1800px;
+}
+
+
+.overlayTextDiv p{
+    text-transform: uppercase;
+font-style: normal;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 900;
+width: auto;
+
+}
+
+.Modren{
+/* To overlay*/
+position: absolute;
+top: 455px;
+left: 21.5%;
+
+height: 10%;
+font-size: 156px;
+margin-bottom: 350px;
+/* Gradient*/
+width: fit-content;
+color: transparent;
+text-shadow: 0 0 0 #33333333;
+background-clip: text;
+background: linear-gradient(to right, white 90%, black 10%);
+-webkit-background-clip: text;
+
+overflow: visible;
+
+}
+
+.Gallery{
+    /* To overlay*/
+position: absolute;
+top: 600px;
+left: 21.5%;
+
+height: 10%;
+font-size: 156px;
+    margin-bottom: 300px;
+
+    display: flex;
+    align-items: center;
+    flex-grow: 3;
+    /* Gradient*/
+width: min-content;
+color: transparent;
+text-shadow: 0 0 0 #33333333;
+background: linear-gradient(to right, white 60%, black 40%);
+-webkit-background-clip: text;
+}
+
+/* Second div*/
+img{
+    width: 1800px;
+height: 2000px;
+}
+
+/* Third div*/
+.whitediv{
+background-color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 1775px;
+height: 2000px;
+}
+
+.whitediv p{
+    width: 980px;
+    height: 320px;
+        /* To overlay*/
+position: absolute;
+left: 64%;
+top: 460px;
+
+font-size: 56px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 3px;
+
+}
+
+/* Our Location Button*/
+
+.LocationButtons{
+    width: 980px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+            /* To overlay*/
+position: absolute;
+left: 64%;
+top: 850px;
+margin-top: 235px;
+}
+
+.blackarea .Blackareabutton{
+    width: 830px;
+    height: 250px;
+    background-color: black;
+margin: 0 auto;
+}
+
+.blackarea .Blackareabutton:hover{
+    background-color: peru;
+    transform: translateY(2px);
+}
+
+.blackarea .Blackareabutton:hover::after .peachareabutton{
+    background-color: rgb(0, 0, 0);
+}
+
+.blackarea p{
+color: white;
+display: block;
+justify-content: center;
+    text-align: center;
+   text-transform: uppercase;
+   font-size: 56px;
+    margin: 15px auto;
+}
+
+.peacharea .peachareabutton{
+    width: 150px;
+    height: 250px;
+    background-color: peru;
+    border: none;
+}
+
+.peacharea img{
+    display: block;
+    justify-content: center;
+        text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+}
+
+.peacharea .peachareabutton:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translateY(2px);
+}
+
+.peacharea .peachareabutton:hover .Blackareabutton{
+    background-color: peru;
+}
+
+/* Second Section */
+
+.secondSection{
+   
+        height: 2600px;
+        width: auto;
+margin: 150px 75px 150px 75px;
+}
+
+.yourDay{
+    display: flex;
+    justify-content: center;
+        text-align: center;
+        width: auto;
+        height: 1550px;
+}
+
+.yourDay .yourDayText{
+    float: left;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 1550px;
+    font-family:  sans-serif;
+}
+
+.yourDay .yourDayText h2{
+font-size: 50px;
+text-transform: uppercase;
+margin: 450px 400px auto 0px;
+font-size: 116px;
+font-weight: 900;
+}
+
+.yourDay .yourDayText p{
+font-size: 30px;
+margin-top: 40px;
+margin: 50px 400px auto 0px;
+font-size: 60px;
+}
+
+.yourDay .yourDayImg{
+float: right;
+width: 50%;
+    height: 1550px;
+}
+
+.yourDay .yourDayImg img{
+    width: 100%;
+    height: 1550px;
+}
+
+.inspiration{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: auto;
+    height: 2000px;
+    font-size: 56px;
+    margin-top: 100px;
+}
+
+.inspiration .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140%;
+    height: 3000px;
+}
+
+.inspiration .one img{
+    width: 100%;
+    height: 3000px;
+}
+
+.inspiration .two{
+    width: 100%;
+    height: 3000px;
+
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.inspiration .subtwo{
+height: 1447px;
+width: auto;
+margin-left: 60px;
+}
+
+.inspiration .subtwo img{
+    width: 100%;
+    height: 100%;
+}
+
+.inspiration .anothersubtwo{
+background-color: rgb(0, 0, 0);
+height: 1480px;
+width: auto;
+margin-top: 70px;
+margin-left: 60px;
+color: white;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.inspiration .anothersubtwo h2{
+text-transform: uppercase;
+margin-top: 150px;
+font-family: 'Arial Narrow Bold', sans-serif;
+float: left;
+width: 1650px;
+height: 600px;
+font-size: 250px;
+margin-top: 5px;
+margin-left: 10px;
+
+}
+
+.inspiration .anothersubtwo p{
+    margin-top: 90px;
+    margin-left: 20px;
+width: 1650px;
+height: 400px;
+font-size: 72px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (width: auto) {
+    .firstSection, .secondSection,.inspiration {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
