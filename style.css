@@ -185,6 +185,7 @@ justify-content: center;
         width: auto;
 margin: 150px 75px 150px 75px;
 position: relative;
+border: 1px red solid;
 }
 
 .yourDay{
