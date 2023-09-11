@@ -93,7 +93,6 @@ height: 550px;
 .whitediv p{
     width: 250px;
     height: 110px;
-    border: 1px red solid;
         /* To overlay*/
 position: absolute;
 left: 93.5%;
@@ -116,7 +115,6 @@ margin-top: 3px;
 position: absolute;
 left: 93.5%;
 top: 85px;
-border: 1px red solid;
 
 margin-top: 210px;
 width: 250px;
@@ -186,48 +184,47 @@ justify-content: center;
         height: 1500px;
         width: auto;
 margin: 150px 75px 150px 75px;
-border: 1px orangered solid;
 position: relative;
-
 }
 
 .yourDay{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
         text-align: center;
-        width: auto;
-        height: 550px;
-        border: 1px black solid;
+        width: 100%;
+        height: 580px;
     position: relative;
 
 }
 
 .yourDay .yourDayText{
     float: left;
-    display: block;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
     width: 50%;
-    height: 550px;
+    height: 580px;
     font-family:  sans-serif;
     margin: 0 auto;
 
 }
 
 .yourDay .yourDayText h2{
-font-size: 40px;
+font-size: 50px;
 text-transform: uppercase;
 margin-top: 200px;
 font-weight: 900;
 float: left;
 line-height: 1;
 text-align: left;
+padding-right: 150px;
 
 
 }
 
 .yourDay .yourDayText p{
-font-size: 22px;
+font-size: 30px;
 margin-top: 10px;
 float: left;
 text-align: left;
@@ -237,15 +234,17 @@ text-align: left;
 
 .yourDay .yourDayImg{
 float: right;
-width: 70%;
-    height: 550px;
-    position: relative;
+width: 50%;
+    height: 580px;
+
 
 }
 
 .yourDay .yourDayImg img{
     width: 100%;
-    height: 550px;
+    height: 580px;
+    margin-right: 0;
+    float: right;
 }
 
 .inspiration{
@@ -266,6 +265,8 @@ width: 70%;
     width: 60%;
     height: 905px;
     margin-right: 10px;
+    position: relative;
+
 }
 
 .inspiration .one img{
@@ -274,8 +275,6 @@ width: 70%;
     float: left;
     margin: 0;
     padding: 0;
-
-    border: 1px hotpink solid;
 }
 
 .inspiration .two{
@@ -283,12 +282,12 @@ width: 70%;
     height: 905px;
     float: left;
     margin-left: 15px;
+    position: relative;
 
 
     display: block;
     justify-content: flex-end;
     align-items: center;
-    border: 1px rgb(10, 160, 55) solid;
 
 }
 
@@ -296,9 +295,8 @@ width: 70%;
 height: 425px;
 width: 100%;
 margin-bottom: 50px;
+position: relative;
 
-
-border: 1px blue solid;
 }
 
 .inspiration .subtwo img{
@@ -315,8 +313,6 @@ height: 425px;
 width: 100%;
 margin-top: 30px;
 color: white;
-
-border: 1px blue solid;
 
 display: flex;
 justify-content: flex-start;
@@ -348,6 +344,73 @@ font-size: 28px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+/* Footer Section */
+
+footer{
+    background-color: rgb(0, 0, 0);
+       padding: 0;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: auto;
+    position: relative;
+
+    }
+    
+    .one{
+    margin-top: 10px;
+    margin-right: auto;
+    align-items: center;
+    margin-left: 60px;
+    }
+    
+    .one img{
+    width: 205px;
+    height:65px;
+    }
+    
+    .two{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    color: rgb(255, 255, 255);
+    }
+    
+    .two p{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .three{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:200px;
+        height: 40px;
+    margin-left: 50px;
+    }
+    
+    .three img{
+        margin-top: 4px;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+    
+        margin-right: 20px;
+        filter: invert(0); 
+    }
+    
+    .three img:hover{
+        background-color: peru;
+        filter: invert(color);
+    }
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (width:800px) {
