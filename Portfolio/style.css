@@ -1,0 +1,626 @@
+* {
+    background-color: #000000;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+}
+
+/*--------------Navigation Bar & Footer--------------*/
+nav,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 99%;
+    position: absolute;
+    background-color: transparent !important;
+}
+
+nav p,
+footer p {
+    font-size: 24px;
+}
+
+nav .social-media,
+footer .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    width: 200px;
+    background-color: transparent !important;
+}
+
+nav .social-media svg,
+footer .social-media svg {
+    background-color: transparent !important;
+
+}
+
+nav .social-media svg path,
+footer .social-media svg path {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    fill: white;
+}
+
+nav .social-media svg path:hover,
+footer .social-media svg path:hover {
+    fill: rgb(78, 225, 160);
+
+}
+
+/*--------------Introduction Section--------------*/
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.intro .greeting {
+    width: 50%;
+    height: 750px;
+}
+
+.intro .greeting .rings {
+    position: relative;
+    top: 12%;
+    left: -20%;
+}
+
+.intro .greeting .circle {
+    position: relative;
+    top: 60%;
+    left: 30%;
+    z-index: 1;
+    background-color: transparent !important;
+}
+
+.intro .greeting h1 {
+    font-size: 'Space Grotesk';
+    font-size: 76px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 200px;
+    z-index: 1;
+    background-color: transparent !important;
+}
+
+.intro .greeting .name {
+    text-decoration: underline;
+    text-decoration-color: rgb(78, 225, 160);
+    background-color: transparent !important;
+}
+
+.intro .greeting p {
+    font-size: 18px;
+    font-size: 'Space Grotesk';
+    position: relative;
+    margin-top: 250px;
+    margin-left: 200px;
+}
+
+.intro .greeting .Contact-underline:hover {
+    color: rgb(78, 225, 160);
+}
+
+.intro .greeting .Contact-underline{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 200px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.intro .greeting .Contact-underline::after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    border-bottom: 2px solid rgb(78, 225, 160); 
+}
+
+.intro .imgOfMine {
+    width: auto;
+    height: 650px;
+    margin-left: 10px;
+}
+
+.intro .imgOfMine .img-mine {
+    position: relative;
+    top: -60px;
+    left: -100px;
+    right: 10px;
+    bottom: 15%;
+    margin-top: 0;
+    width: auto;
+    height: 620px;
+}
+
+/*-------------- For White Line --------------*/
+.white-line {
+    border: none;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(107, 107, 107);
+    margin: 0 auto;
+}
+
+/*--------------Experience Section--------------*/
+.experience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 30px 50px 30px 50px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.experience .grid-item {
+    padding-left: 10px;
+
+}
+
+.experience .grid-item h4 {
+    font-size: 44px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.experience .grid-item p {
+    font-size: 14px;
+}
+
+
+/*--------------Projects Section--------------*/
+.projects {
+    margin: 0;
+    padding: 30px 50px 30px 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projects .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.projects .heading h3 {
+    font-size: 88px;
+    margin-left: 30px;
+}
+
+.projects .heading .Contact-underline{
+    font-size: 20px;
+    text-transform: uppercase;
+    top: 5%;
+    left: 2%;
+    margin-right: 65px;
+
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.projects .heading .Contact-underline::after{
+    content: ""; 
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    border-bottom: 2px solid rgb(78, 225, 160); 
+}
+
+.projects .heading .Contact-underline:hover {
+    color: rgb(78, 225, 160);
+}
+.projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    padding: 30px 50px 30px 50px;
+
+}
+
+.projects .projects-grid .grid-item {
+    width: 550px;
+    height: 550px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.projects .projects-grid .grid-item img {
+    width: 550px;
+    height: 450px;
+    position: relative;
+}
+
+.projects .projects-grid .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.projects .projects-grid .grid-item .overlay .container-underline {
+    padding-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.projects .projects-grid .grid-item .overlay .container-underline::after {
+    content: ""; 
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    border-bottom: 2px solid rgb(78, 225, 160); 
+}
+
+.projects .projects-grid .grid-item .overlay:hover {
+    color: rgb(78, 225, 160);
+}
+.projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    padding: 30px 50px 30px 50px;
+
+}
+
+.projects .projects-grid .grid-item .overlay a {
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
+    text-decoration: underline;
+    text-decoration-color: rgb(78, 225, 160);
+}
+
+.projects .projects-grid .grid-item:hover .overlay {
+    opacity: 1;
+    color: rgb(78, 225, 160);
+}
+
+.projects .projects-grid .grid-item .overlay a:hover {
+    color: rgb(78, 225, 160);
+}
+
+.projects .projects-grid .grid-item .projectDetail {
+    height: 90px;
+}
+
+.projects .projects-grid .grid-item .projectDetail .title {
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.projects .projects-grid .grid-item .projectDetail .languages {
+    height: 30px;
+    text-transform: uppercase;
+}
+
+.projects .projects-grid .grid-item .projectDetail .languages p {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/*--------------Contact Me Section--------------*/
+.contactMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 550px;
+}
+
+.contactMe .contact {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.contactMe .contact img {
+
+    position: relative;
+    top: 73%;
+    left: -70%;
+}
+
+.contactMe .contact h1 {
+    font-size: 88px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.contactMe .contact p {
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+.contactMe .inputData {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    padding-top: 90px;
+}
+
+.contactMe .inputData input {
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+
+}
+
+.contactMe .inputData input[type=text]::placeholder {
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.contactMe .inputData input:focus {
+    border: none;
+    border-bottom: 2px solid rgb(78, 225, 160);
+}
+
+.contactMe .inputData #name,
+#email {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contactMe .inputData #message {
+    width: 80%;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.contactMe .inputData ::placeholder {
+    color: #999;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.contactMe .inputData button {
+    border: none;
+    border-bottom: 2px solid #999;
+    margin-top: 30px;
+    margin-right: 80px;
+    float: right;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.contactMe .inputData button:hover {
+    color: rgb(78, 225, 160);
+    border-bottom: 2px solid rgb(78, 225, 160);
+
+}
+
+.contactMe .inputData .button {
+    color: rgb(78, 225, 160) !important;
+    float: right !important;
+}
+
+
+/*--------------Media Queries--------------*/
+
+@media screen and (max-width: 768px) {
+    img{
+        position: relative;
+    }
+    h1{
+        font-size: 36px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  nav p,
+  footer p {
+    font-size: 18px;
+  }
+
+  nav .social-media svg,
+  footer .social-media svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .intro .greeting {
+    height: 550px;
+  }
+
+  .intro .greeting h1 {
+    font-size: 50px;
+  }
+
+  .intro .greeting p {
+    font-size: 16px;
+  }
+
+  .experience .grid-item h4 {
+    font-size: 32px;
+  }
+
+  .experience .grid-item p {
+    font-size: 14px;
+  }
+
+  .projects .heading h3 {
+    font-size: 60px;
+    margin-left: 20px;
+  }
+
+  .projects .heading .Contact-underline {
+    font-size: 16px;
+  }
+
+  .projects .projects-grid .grid-item {
+    width: 450px;
+    height: 450px;
+  }
+
+  .projects .projects-grid .grid-item img {
+    width: 450px;
+    height: 350px;
+  }
+
+  .projects .projects-grid .grid-item .overlay a {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .projects .projects-grid .grid-item .projectDetail {
+    height: 70px;
+  }
+
+  .contactMe .contact h1 {
+    font-size: 40px;
+  }
+
+  .contactMe .contact p {
+    font-size: 16px;
+  }
+
+  .contactMe .inputData input,
+  .contactMe .inputData button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav,
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  nav p,
+  footer p {
+    font-size: 22px;
+  }
+
+  .intro .greeting {
+    height: 650px;
+  }
+
+  .intro .greeting h1 {
+    font-size: 60px;
+  }
+
+  .intro .greeting p {
+    font-size: 18px;
+  }
+
+  .experience .grid-item h4 {
+    font-size: 40px;
+  }
+
+  .experience .grid-item p {
+    font-size: 16px;
+  }
+
+  .projects .heading h3 {
+    font-size: 76px;
+    margin-left: 40px;
+  }
+
+  .projects .heading .Contact-underline {
+    font-size: 20px;
+  }
+
+  .projects .projects-grid .grid-item {
+    width: 550px;
+    height: 550px;
+  }
+
+  .projects .projects-grid .grid-item img {
+    width: 550px;
+    height: 450px;
+  }
+
+  .projects .projects-grid .grid-item .overlay a {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .projects .projects-grid .grid-item .projectDetail {
+    height: 80px;
+  }
+
+  .contactMe .contact h1 {
+    font-size: 44px;
+  }
+
+  .contactMe .contact p {
+    font-size: 18px;
+  }
+
+  .contactMe .inputData input,
+  .contactMe .inputData button {
+    font-size: 18px;
+  }
+}
